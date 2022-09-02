@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: path.join(__dirname, "src", "index.tsx"),
   output: {
     path:path.resolve(__dirname, "dist"),
   },
@@ -24,7 +24,7 @@ module.exports = {
         use: 'ts-loader',
         // Use babel-loader w/ @babel/preset-typescript & react?
         exclude: /node_modules/,
-        loader: "babel-loader"
+        
       },
       {
         test: /\.s[ac]ss$/i,
