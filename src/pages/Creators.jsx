@@ -19,11 +19,11 @@ const github = [
 ];
 
 const Creators = () => {
-  const cards = names.map((nam, i) => <CreatorCard name ={nam} image ={images[i]} bio = {bio[i]} github ={github[i]} linkedin ={linkedin[i]}/>)
+  const cards = names.map((nam, i) => <CreatorCard name ={nam} image ={images[i]} bio = {bio[i]} github ={github[i]} linkedin ={linkedin[i]} key={nam}/>)
 
   return (
     <div id='creators'>
-      <div class="centered">
+      <div className="centered">
         <h1>Meet our Team!</h1>
       </div >
       <div className = "cards-outline" >{cards}</div>

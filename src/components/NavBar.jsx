@@ -137,8 +137,9 @@ const ResponsiveAppBar = () => {
                 // onClick={() => navigate(endpoints[i])}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Link  to= {endpoints[i]} spy={true} smooth={true} offset={500}
+                <Link  to={endpoints[i]} spy={true} smooth={true} offset={500}
                 >
+                 { console.log(endpoints[i])}
                   {page}
                 </Link>
               </Button>
