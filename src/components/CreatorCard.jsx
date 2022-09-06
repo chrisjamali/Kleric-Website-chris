@@ -7,8 +7,15 @@ const CreatorCard = (props) => {
       <h3> {props.name}</h3>
       <img src={props.image} alt={props.name} />
       <p> {props.bio}</p>
-      <SocialIcon url={props.linkedin} />
-      <SocialIcon url={props.github} />
+      <p> Connect with {props.name.split(" ")[0]} ! </p>
+
+      <div
+        className='centered'
+        style={{ justifyContent: 'space-between !important' }}
+      >
+        <SocialIcon url={props.linkedin} />
+        <SocialIcon url={props.github} />
+      </div>
     </div>
   );
 }

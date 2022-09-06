@@ -24,8 +24,8 @@ $nav-gradient: linear-gradient(
   background: rgb(53, 46, 87);
   background: linear-gradient(
     48deg,
-    rgba(53, 46, 87, 1) 54%,
-    rgba(88, 60, 117, 1) 84%
+    rgb(50, 46, 87) 54%,
+    rgb(74, 60, 117) 84%
   );
   button {
     color: #d5cae1;
@@ -73,8 +73,8 @@ $nav-gradient: linear-gradient(
   background: rgb(240, 212, 255);
   background: linear-gradient(
     152deg,
-    rgba(240, 212, 255, 0.293) 45%,
-    rgba(254, 250, 255, 0.47) 67%
+    rgba(223, 212, 255, 0.293) 45%,
+    rgba(252, 250, 255, 0.47) 67%
   );
   width: 100%;
   height: 70vh;
@@ -88,8 +88,8 @@ $nav-gradient: linear-gradient(
 
 body {
   width: 100%;
-
-  background:  rgba(245, 240, 249, 0.562);
+color: $light-mid-purp;
+  background:  rgba(250, 248, 253, 0.562);
   text-align: center;
 }
 
@@ -142,13 +142,16 @@ body {
   flex-direction: column;
   align-items: center;
   border: 0.5px solid #5f539b29;
+  max-height: 80vh;;
   img {
-    width: 60%;
-    height: 60%;
+   min-width: 30%;
+    max-height: 40%;
     border-radius: 50%;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.342);
   }
 }
 #creators {
+  // width: 100%;
   h1 {
     display: flex;
     border-bottom: 3px solid $subtle-button;
@@ -161,9 +164,13 @@ body {
   .cards-outline {
     display: flex;
     border: 0.5px solid #5f539b29;
+    justify-content: center;
+    // width: 100%;
   }
 }
-
+.social-icon{
+  margin: .4em 1em;
+}
 //FOOTER
 .footer {
   height: 30vh;

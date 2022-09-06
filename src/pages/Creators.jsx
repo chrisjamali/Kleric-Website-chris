@@ -5,10 +5,21 @@ import blankpic from "../assets/blankPIC.jpeg"
 const names = ["An Le", "Chris Jamali", "Crystal Agoncillo", "Rosendo De Luna"]
 const images = [blankpic, blankpic, crystalpic, blankpic];
 const bio = ["Software Engineer","Software Engineer","Software Engineer","Software Engineer"]
-const linkedin = []
-const github = [];
+const linkedin = [
+  'https://www.linkedin.com/in/an-le-aa4b00244/',
+  'https://www.linkedin.com/in/chris-jamali-b740521b7/',
+  'https://www.linkedin.com/in/agoncillo/',
+  'https://www.linkedin.com/in/rosendo-isra-deluna/'
+];
+const github = [
+  'https://github.com/AnLelol',
+  'https://github.com/chrisjamali',
+  'https://github.com/cagoncil',
+  'https://github.com/Rosend0',
+];
+
 const Creators = () => {
-  const cards = names.map((nam, i) => <CreatorCard name ={nam} image ={images[i]} bio = {bio[i]} />)
+  const cards = names.map((nam, i) => <CreatorCard name ={nam} image ={images[i]} bio = {bio[i]} github ={github[i]} linkedin ={linkedin[i]}/>)
 
   return (
     <div id='creators'>
