@@ -1,7 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import Routing from './Routing.jsx';
+import App from './App';
+const root = createRoot(document.getElementById('root') as HTMLElement);
+root.render(
+  // <React.StrictMode> // Re-renders index.tsx twice during development
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+  //  </React.StrictMode>
 
-ReactDOM.render(
-    <h1>Hello World</h1>,
-  document.getElementById('root')
 );

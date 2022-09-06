@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis&family=Montserrat&family=Nunito&family=Poppins:wght@400&family=Press+Start+2P&family=Silkscreen&display=swap');
+
+$dark-purple: #231d41;
+$dark-main: #232031;
+$light-mid-purp: #352e57;
+$light-purple: #684889;
+$dashboard-background: #231e3b;
+$sidebar-background: #232131;
+$subtle-button: #322e45;
+$puce: #b5a6c3;
+$icon-color: #a5a3b0;
+$background-gradient: linear-gradient(
+  152deg,
+  rgba(240, 212, 255, 0.459) 45%,
+  rgba(254, 250, 255, 0.562) 67%
+);
+$nav-gradient: linear-gradient(
+  48deg,
+  rgba(53, 46, 87, 1) 54%,
+  rgba(88, 60, 117, 1) 84%
+);
+
+.css-19r6kue-MuiContainer-root {
+  background: rgb(53, 46, 87);
+  background: linear-gradient(
+    48deg,
+    rgba(53, 46, 87, 1) 54%,
+    rgba(88, 60, 117, 1) 84%
+  );
+  button {
+    color: #d5cae1;
+  }
+}
+
+.MuiTypography-h6,
+.MuiTypography-h5 {
+  margin-left: 0.25em !important;
+  padding: 0.15em !important;
+  color: white;
+  font-family: 'Press Start 2P', cursive !important;
+  text-align: center !important;
+  font-size: 2em !important;
+  letter-spacing: -1px !important;
+  word-spacing: 1px !important;
+
+  .title {
+    background: -webkit-linear-gradient(#eee, rgb(69, 43, 94));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(-4px -1px rgb(66, 36, 76))
+      drop-shadow(-4px -1px rgb(46, 25, 53))
+      drop-shadow(-4px -1px rgb(30, 16, 34));
+  }
+
+  .plus {
+    font-size: 1em !important;
+    background: -webkit-linear-gradient(#eee, rgb(130, 109, 25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(-3px -1px rgb(88, 76, 29))
+      drop-shadow(-3px -1px rgb(52, 45, 17))
+      drop-shadow(-3px -1px rgb(24, 21, 8));
+  }
+}
+
+.css-1t6c9ts {
+  @media (min-width: 900px) {
+    justify-content: flex-end;
+  }
+}
+.homepage {
+  display: grid;
+  background: rgb(240, 212, 255);
+  background: linear-gradient(
+    152deg,
+    rgba(240, 212, 255, 0.293) 45%,
+    rgba(254, 250, 255, 0.47) 67%
+  );
+  width: 100%;
+  height: 70vh;
+  box-shadow: 5px 5px 10px 5px $background-gradient;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+body {
+  width: 100%;
+
+  background:  rgba(245, 240, 249, 0.562);
+  text-align: center;
+}
+
+#cross {
+  background: rgb(255, 255, 255);
+  height: 190px;
+  position: relative;
+  width: 90px;
+}
+#cross:after {
+  background: rgb(255, 255, 255);
+  content: '';
+  height: 70px;
+  left: -60px;
+  position: absolute;
+  top: 60px;
+  width: 200px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+}
+.cross-place {
+  display: grid;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.tag-line {
+  margin: 1em;
+  width: 50%;
+  color: $light-mid-purp;
+  h5,
+  h1 {
+    letter-spacing: 0.2em;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  em{
+    font-size: 60px;
+  }
+}
+
+// CREATOR SEGEMENT
+
+.creator-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.5px solid #5f539b29;
+  img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+  }
+}
+#creators {
+  h1 {
+    display: flex;
+    border-bottom: 3px solid $subtle-button;
+    text-align: center;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  .cards-outline {
+    display: flex;
+    border: 0.5px solid #5f539b29;
+  }
+}
+
+//FOOTER
+.footer {
+  height: 30vh;
+  background-color: $subtle-button;
+}
+
+::selection {
+  background: rgb(53, 46, 87);
+  background: $subtle-button;
+  color: #eee;
+}
