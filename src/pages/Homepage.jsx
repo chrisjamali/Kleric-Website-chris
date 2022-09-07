@@ -15,15 +15,12 @@ const Homepage = () => {
       <div
         className='homepage'
         style={{
-           position: "relative",
-          '&:before': {
-            content: "",
-            backgroundImage: ` url(${wave})`,
-            backgroundSize: '100% 90vh',
-            backdropFilter: 'opacity(.50%)  ',
-              position: 'absolute',
-      opacity:' 0.25'
-          },
+           
+            "--img": ` url(${wave})`,
+            // height:"90vh",
+            backgroundSize: '100% 90vh', 
+         
+          
         }}
       >
         {/* <div className=' centered cross-place'>
@@ -32,14 +29,14 @@ const Homepage = () => {
         </div> */}
         <div className='tag-line'>
           <h1>
-            Give your K8 cluster a <em className='title'>Kleric</em>
+            Give your K8s clusters a <em className='title'>Kleric</em>
           </h1>
           <h5>an open-source Kubernetes monitoring tool</h5>
           <DownloadButton />
         </div>
       </div>
       <About id='about' />
-      <Install id='install' />
+      <Install id='install' /> 
       <Creators id='creators' />
       <Footer />
     </div>

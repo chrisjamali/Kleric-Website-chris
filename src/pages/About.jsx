@@ -5,8 +5,12 @@ const About = () => {
     <div id='about'>
       About
       <div className='about-glance'>
-        <h2> Kleric+ performs a Check-up on your cluster in a glance</h2>
+        <h2> Kleric+ performs a check-up on your cluster in a moments notice</h2>
+
+
       </div>
+
+      
     </div>
   );
 }

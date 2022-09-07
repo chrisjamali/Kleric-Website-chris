@@ -2,8 +2,10 @@ import React from 'react'
 import CreatorCard from '../components/CreatorCard'
 import crystalpic from "../assets/crystal-linked-in.jpeg"
 import blankpic from "../assets/blankPIC.jpeg"
+import an from "../assets/an-le.jpg"
+import rosendo from '../assets/Rosendo.jpg';
 const names = ["An Le", "Chris Jamali", "Crystal Agoncillo", "Rosendo De Luna"]
-const images = [blankpic, blankpic, crystalpic, blankpic];
+const images = [an, blankpic, crystalpic, rosendo];
 const bio = ["Software Engineer","Software Engineer","Software Engineer","Software Engineer"]
 const linkedin = [
   'https://www.linkedin.com/in/an-le-aa4b00244/',
