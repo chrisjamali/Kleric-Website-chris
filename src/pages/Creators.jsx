@@ -1,7 +1,7 @@
 import React from 'react'
 import CreatorCard from '../components/CreatorCard'
 import crystalpic from "../assets/crystal-linked-in.jpeg"
-import blankpic from "../assets/blankPIC.jpeg"
+// import blankpic from "../assets/blankPIC.jpeg"
 import an from "../assets/an-le.jpg"
 import rosendo from '../assets/Rosendo.jpg';
 import chris from "../assets/chris-turkey.jpg"

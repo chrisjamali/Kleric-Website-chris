@@ -36,11 +36,11 @@ const Homepage = () => {
         </div>
       </div>
 
-      <About id='about'/>
+      <About id='about' />
       <Install id='install' /> 
       <Creators id='creators' />
       <Footer />
-
+      
     </div>
   );
 };

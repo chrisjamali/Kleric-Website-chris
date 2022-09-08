@@ -176,16 +176,16 @@ body {
   width: 100%;
   img {
     width: 15em;
-    max-height: 50em;
-    min-width: 40%;
-    min-height: 50%;
-    border-radius: 50%;
+    height: 40em;
+    // min-width: 50%;
+    min-height: 15em;
+    border-radius: 60%;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.342);
-    margin: 1em 3em;
+    margin: 1em 2em;
   }
 }
 #creators {
-  // width: 100%;
+  width: 100%;
   h1 {
     display: flex;
     border-bottom: 3px solid $subtle-button;
@@ -214,61 +214,108 @@ body {
   height: 100vh;
 }
 
-#about {
-  
-  height: 100vh;
-  background:linear-gradient(162deg, rgba(82, 65, 128, 0.19)35%,rgba(160, 137, 224, 0.052) 67% );
-  // display: flex;
-  // align-items: flex-start;
-  // justify-content: center;
-  // flex-direction: column;
+#about{
+  height: 80vh;
+  background: linear-gradient(
+    162deg,
+    rgba(82, 65, 128, 0.265) 35%,
+    rgba(179, 159, 231, 0.052) 67%
+  );
   display: flex;
-  justify-content: center;
-
-  .grid{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-   grid-template-columns:  2fr 1fr .5fr;
-
-  .k8s {
-    display: flex;
-    max-width: 300px;
-height: 200px;
+  justify-content: space-around;
+   
+.page {
+  
+  display: flex;
+  justify-content: space-between;
+  em {
+    font-size: 29px;
+    background: #e892ebb3;
+    // color: white;
   }
-  .images{
-      display:flex;
-      max-height: 13em;
-      flex-direction: column;
-align-items: center;
-gap: 2em;
-    }
-  .grafana {
-    display: flex;
-    max-width: 200px;
-  }
-  .prom {
+  .grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 0.5fr;
+
+    .k8s {
       display: flex;
-      max-width: 150px;
+      max-width: 250px;
+      height: 200px;
+      opacity: 0.8;
     }
-  .about-glance {
-    display: flex;
-    min-width: 50%;
-    margin: 3em 4em;
-    text-align: left;
-    flex-direction: column;
-    
-    h2 {
-      font-size: 25px;
-      letter-spacing: 2px;
+
+    .images {
+      //       display:flex;
+      //       max-height: 15em;
+      //       // flex-direction: column;
+      // // align-items: center;
+      // gap: 2em;
+      display: grid;
+      max-height: 13em;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin-top: 2em;
+      grid-gap: 2em 3em;
     }
-    
-  }
-  .description {
-    display: flex;
-    width: 70%;
-    font-size: 16px;
+    .grafana {
+      display: flex;
+      max-width: 200px;
+      // justify-content: center;
+      // align-items: center;
+      justify-content: center;
+      opacity: 0.85;
+    }
+    .prom {
+      display: flex;
+      max-width: 200px;
+      margin-left: 3em;
+      opacity: 0.8;
+    }
+    .kleric {
+      display: flex;
+      width: 350px;
+      height: 80px;
+      opacity: 0.75;
+      margin-top: 4em;
+      justify-content: baseline;
+    }
+    .about-glance {
+      display: flex;
+      min-width: 50%;
+      max-width: 22em;
+      min-height: 21em;
+      max-height: 21em;
+      margin: 4em .5em;
+      text-align: left;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.615);
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 3px 3px 5px rgba(215, 208, 222, 0.378);
+      position: static;
+      h2 {
+        font-size: 25px;
+        letter-spacing: 2px;
+        position: static;
+        width: 100%;
+      }
+    }
+    .description {
+      display: flex;
+      max-width: 23em;
+      font-size: 16px;
+      position: relative;
+      // text-align: center;
+      justify-content: center;
+    }
   }
 }
+}
+.clm {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
 }
 
 //FOOTER
