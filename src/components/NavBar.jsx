@@ -18,7 +18,7 @@ import About from '../pages/About.jsx';
 import Creators from '../pages/Creators.jsx';
 import Install from '../pages/Features.jsx';
 // import { HashLink, NavHashLink } from 'react-router-hash-link';
-import {Link} from "react-scroll"
+import {Link} from "react-scroll";
 
 const pages = ['About', 'Features', 'Creators'];
 const endpoints = ['about', 'install', 'creators'];

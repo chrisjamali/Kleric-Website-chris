@@ -10,7 +10,6 @@ const App = () => {
     <div>
       <NavBar/>
       <Routing />
-
     </div>
   );
 };

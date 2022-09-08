@@ -8,7 +8,7 @@ const CreatorCard = (props) => {
    <div className="pictures" src={props.image} ></div>
       <img src={props.image} alt={props.name} />
       <p> {props.bio}</p>
-      <p> Connect with {props.name.split(" ")[0]} ! </p>
+      <p> Connect with {props.name.split(" ")[0]}</p>
 
       <div
         className='centered'

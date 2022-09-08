@@ -28,11 +28,13 @@ const Homepage = () => {
           <div id='cross'></div>
         </div> */}
         <div className='tag-line'>
-          <h1>
-            Give your K8s clusters a <em className='title'>Kleric</em>
-          </h1>
-          <h5>an open-source Kubernetes monitoring tool</h5>
-          <DownloadButton />
+          <div className='header-content'>
+            <h1>
+              Give your k8s clusters a <em>Kleric</em>
+            </h1>
+            <h5>An open-source Kubernetes monitoring tool</h5><br/><br/><br/>
+            <DownloadButton />
+          </div>
         </div>
       </div>
 
