@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import Homepage from './pages/Homepage.jsx';
 import About from './pages/About.jsx';
 import Creators from './pages/Creators.jsx';
-import Install from './pages/Install.jsx';
+import Install from './pages/Features.jsx';
 const Routing = () => {
   return (
     <div>

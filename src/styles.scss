@@ -29,6 +29,11 @@ $download-button: rgb(61, 88, 172);
   }
 }
 
+body,
+html {
+  width: 100vw;
+}
+
 .MuiTypography-h6,
 .MuiTypography-h5 {
   margin-left: 0.25em !important;
@@ -69,7 +74,12 @@ $download-button: rgb(61, 88, 172);
   display: grid;
   // background-color: #f0d4ff;
   // background-image: linear-gradient(152deg, #dfd4ff4b 45%, #fcfaff78 67%);
-  background-image: linear-gradient(to top left, rgba(221, 215, 235, 0.752), rgba(104, 80, 181, 0.617)), var(--img);
+  background-image: linear-gradient(
+      to top left,
+      rgba(221, 215, 235, 0.752),
+      rgba(104, 80, 181, 0.617)
+    ),
+    var(--img);
 
   width: 100%;
   height: 70vh;
@@ -90,8 +100,12 @@ $download-button: rgb(61, 88, 172);
 .download {
   // background: rgb(64, 147, 198);
   // background: linear-gradient(105deg, rgba(53, 80, 163, 0.972) 40%,rgba(71, 84, 200, 0.898) 98% );
-    background: rgb(64, 147, 198);
-  background: linear-gradient(105deg, rgb(71, 44, 151) 40%,rgb(95, 60, 199) 98%);
+  background: rgb(64, 147, 198);
+  background: linear-gradient(
+    105deg,
+    rgb(71, 44, 151) 40%,
+    rgb(95, 60, 199) 98%
+  );
   padding: 1em 2.5em;
   border: none;
   border-radius: 10px;
@@ -106,12 +120,12 @@ $download-button: rgb(61, 88, 172);
   position: relative;
 }
 .download:hover {
- background: rgba(71, 44, 151, 0.676);
+  background: rgba(71, 44, 151, 0.676);
   color: rgb(32, 19, 49);
   transform: scale(1.01);
   box-shadow: 4px -3px 3px rgba(32, 32, 35, 0.327);
- border: 3px solid rgb(71, 44, 151);
- color:rgb(25, 25, 68);
+  border: 3px solid rgb(71, 44, 151);
+  color: rgb(25, 25, 68);
 }
 .download:active {
   transform: scale(0.97);
@@ -123,21 +137,6 @@ body {
   text-align: center;
 }
 
-#cross {
-  background: rgb(255, 255, 255);
-  height: 190px;
-  position: relative;
-  width: 90px;
-}
-#cross:after {
-  background: rgb(255, 255, 255);
-  content: '';
-  height: 70px;
-  left: -60px;
-  position: absolute;
-  top: 60px;
-  width: 200px;
-}
 .centered {
   display: flex;
   justify-content: center;
@@ -174,13 +173,13 @@ body {
   align-items: center;
   border: 0.5px solid #5f539b29;
   max-height: 90vh;
- width: fit-content;
+  width: 100%;
   img {
-    width: 280px;
+    width: 15em;
     max-height: 50em;
     min-width: 40%;
     min-height: 50%;
-    // border-radius: 50%;
+    border-radius: 50%;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.342);
     margin: 1em 3em;
   }
@@ -204,43 +203,90 @@ body {
     border: 0.5px solid #413c5829;
     justify-content: center;
     width: 100%;
-   
   }
 }
 .social-icon {
-  margin: .5em;
+  margin: 0.5em;
   margin-bottom: 3em;
 }
 
-#install{
+#install {
   height: 100vh;
 }
 
-#about{
-   height: 100vh;
-   background-color: rgba(82, 65, 128, 0.19);
-   display: grid;
-grid-template-areas: "glance glance glance"
-                     "glance glance glance";
-   .about-glance{
-   grid-area: glance;
+#about {
+  
+  height: 100vh;
+  background:linear-gradient(162deg, rgba(82, 65, 128, 0.19)35%,rgba(160, 137, 224, 0.052) 67% );
+  // display: flex;
+  // align-items: flex-start;
+  // justify-content: center;
+  // flex-direction: column;
   display: flex;
-   margin: 2em;
-   width: 50%;
-   text-align: left;
-   position: absolute;
-   }
+  justify-content: center;
+
+  .grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns:  2fr 1fr .5fr;
+
+  .k8s {
+    display: flex;
+    max-width: 300px;
+height: 200px;
+  }
+  .images{
+      display:flex;
+      max-height: 13em;
+      flex-direction: column;
+align-items: center;
+gap: 2em;
+    }
+  .grafana {
+    display: flex;
+    max-width: 200px;
+  }
+  .prom {
+      display: flex;
+      max-width: 150px;
+    }
+  .about-glance {
+    display: flex;
+    min-width: 50%;
+    margin: 3em 4em;
+    text-align: left;
+    flex-direction: column;
+    
+    h2 {
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+    
+  }
+  .description {
+    display: flex;
+    width: 70%;
+    font-size: 16px;
+  }
+}
 }
 
 //FOOTER
 .footer {
   height: 30vh;
   background-color: $subtle-button;
- color: rgb(224, 242, 238);
+  color: rgb(224, 242, 238);
 }
 
 ::selection {
   background: rgb(53, 46, 87);
   background: rgb(82 65 128);
   color: #eee;
+}
+// body{
+//   min-width: 100%;
+// }
+
+button:hover {
+  cursor: pointer;
 }

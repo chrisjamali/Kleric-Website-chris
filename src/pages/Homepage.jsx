@@ -5,7 +5,7 @@ import React from 'react';
 // import Homepage from './Homepage.jsx';
 import About from './About';
 import Creators from './Creators';
-import Install from './Install';
+import Install from './Features';
 import Footer from '../components/Footer';
 import DownloadButton from '../components/DownloadButton';
 import wave from '../assets/red-wave.jpg';
@@ -35,10 +35,12 @@ const Homepage = () => {
           <DownloadButton />
         </div>
       </div>
-      <About id='about' />
+
+      <About id='about'/>
       <Install id='install' /> 
       <Creators id='creators' />
       <Footer />
+
     </div>
   );
 };
