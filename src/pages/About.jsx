@@ -8,7 +8,7 @@ const About = () => {
     <div id='about'>
       {/* About */}
       <div className='centered'>
-        <h2>ABOUT</h2>
+        <h2>Why use Kleric?</h2>
       </div>
       <div className='page'>
         <div className='grid'>

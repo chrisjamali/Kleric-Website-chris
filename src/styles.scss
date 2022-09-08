@@ -214,6 +214,11 @@ body {
   height: 100vh;
 }
 
+
+
+////ABOUT PAGE ///////////////////////////
+
+
 #about{
   height: 80vh;
   background: linear-gradient(
@@ -230,7 +235,7 @@ body {
   justify-content: space-between;
   em {
     font-size: 29px;
-    background: #e892ebb3;
+    background: #d066d46f;
     // color: white;
   }
   .grid {
@@ -318,7 +323,7 @@ body {
   margin-right: 2em;
 }
 
-//FOOTER
+//FOOTER////////////////////////////
 .footer {
   height: 30vh;
   background-color: $subtle-button;
