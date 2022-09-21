@@ -105,7 +105,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 75vh;
+    height: 80vh;
   }
 }
 // .homepage::before {
@@ -321,6 +321,7 @@ background: linear-gradient(165deg, rgba(181,166,195,1) 22%, rgba(203, 188, 217,
     img{
       border-radius: 10px;
       box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.23);
+      min-height: 20em;
     }
   }
   .box {
